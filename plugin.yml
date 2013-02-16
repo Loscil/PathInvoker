@@ -1,0 +1,6 @@
+name: PathInvoker
+main: com.loscilderails.pathInvoker.PathInvoker
+version: 1.0
+commands:
+    path:
+        description: Main command.

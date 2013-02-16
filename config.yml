@@ -1,0 +1,27 @@
+# Number of block replacements (replace1, replace2, replace3, etc)
+numReplacements: 2
+
+# Probability number, all future probabilities will be thatprobability/thisnumber
+# For example, if set to 100, and a replace or trample probability is set to 50, the chance of change
+# Will be 50/100=1/2 chance of change. Must be an integer, no decimals
+probabilityValue: 100
+
+# Enables Trampling of Grass
+trampleGrass: true
+# Only used if trampleGrass is true, percentage probability (integer only, no decimals)
+grassTrampleProbability: 50
+
+# First replacement chunk, replaces grass with dirt
+replace1:
+    # From blockid
+    from: 2
+    # To blockid
+    to: 3
+    # Probability of change
+    probability: 50
+
+# Second replacement chunk, replaces dirt with gravel
+replace2:
+    from: 3
+    to: 13
+    probability: 50
