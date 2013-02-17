@@ -1,6 +1,9 @@
-name: PathInvoker
-main: com.loscilderails.pathInvoker.PathInvoker
-version: 1.0
+name: ${project.artifactId}
+description: ${project.description}
+main: ${project.mainclass}
+version: ${project.version}
+author:
+ - LoscilDerails
 commands:
     path:
         description: Main command.
