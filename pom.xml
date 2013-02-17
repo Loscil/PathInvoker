@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- Project properties. -->
+    <groupId>com.loscilderails</groupId>
+    <artifactId>PathInvoker</artifactId>
+    <version>1.0</version>
+    <name>PathInvoker</name>
+    <description>Player made paths in Minecraft</description>
+    <!-- Developers -->
+    <developers>
+        <developer>
+            <id>Derails</id>
+        </developer>
+    </developers>
+    <!-- Properties -->
+    <properties>
+        <project.mainclass>com.loscilderails.pathInvoker.PathInvoker</project.mainclass>
+    </properties>
+    <!-- Repositories -->
+    <repositories>
+        <repository>
+            <id>Bukkit</id>
+            <url>http://repo.bukkit.org/content/groups/public</url>
+        </repository>
+    </repositories>
+    <!-- Dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.4.7-R1.0</version>
+        </dependency>
+    </dependencies>
+    <!-- Build instructions -->
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <defaultGoal>compile package</defaultGoal>
+        <sourceDirectory>${basedir}/src/</sourceDirectory>
+        <resources>
+            <resource>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+                <directory>${basedir}</directory>
+                <filtering>true</filtering>
+            </resource>
+            <!-- <resource> <includes> <include>LICENSE.txt</include> </includes> 
+                <directory>${basedir}</directory> </resource> -->
+        </resources>
+    </build>
+</project>
